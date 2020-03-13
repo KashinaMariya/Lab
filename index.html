@@ -1,0 +1,42 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>HW 1</title>
+    <meta charset=”utf-8”>
+    <script type="text/JavaScript"></script>
+    </head>
+    <body>
+            <h1>HW 1. Mariya Kashina C41131</h1>
+            <input type="checkbox" id="checkbox" onchange="checkFluency()"></input>
+            <label id="Happy" for="checkbox">Sad</label>
+            <script type="text/JavaScript">
+                 function checkFluency()
+                 {
+                   checkbox=document.getElementById("checkbox");    
+                   if (checkbox.checked)
+                 {
+                   document.getElementById("Happy").innerHTML="Happy";
+                   document.getElementById("Happy1").style="display: block";
+                   document.getElementById("Sad1").style="display: none";
+                 } else {
+                   document.getElementById("Happy").innerHTML="Sad";
+                   document.getElementById("Sad1").style="display: block";
+                   document.getElementById("Happy1").style="display: none";
+                 }
+                 }
+            </script>
+            <p></p>
+            <svg width="500" height="300">
+               <circle cx="250" cy="150" r="150" fill="yellow">
+                  </circle>
+                <ellipse cx="300" cy="100" rx="25" ry="50"
+                    fill="black"></ellipse>
+                <ellipse cx="175" cy="100" rx="25" ry="50"
+                    fill="black"></ellipse>
+                <path id="Happy1" d="M325 200 C 300 300, 175 300, 150 200"
+                    fill="transparent" stroke="red" stroke-width="5" style="display: none"></path>
+                <path id="Sad1" d="M325 250 C 300 150, 175 150, 150 250"
+                    fill="transparent" stroke="red" stroke-width="5" style="display: block"></path>
+            </svg>
+    </body>
+</html>
